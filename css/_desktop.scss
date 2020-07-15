@@ -1,0 +1,58 @@
+@mixin desktop {
+  @media (min-width: 700px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+@include desktop {
+  .phone {
+    margin: 0 auto 3em;
+  }
+
+  .gradient__background {
+    left: -80px;
+    width: 35%;
+    height: 80vh;
+  }
+
+  .gradient__background::before {
+    content: "";
+    position: fixed;
+    right: -300px;
+    bottom: 0;
+    width: 45%;
+    height: 80vh;
+    background: gradients(30deg);
+    border-radius: 50% 60% 0 0/50% 60% 0 0;
+    opacity: .1;
+    z-index: -100;
+  }
+
+  .grid {
+    display: flex;
+  }
+
+  .contents {
+    align-self: center;
+    text-align: left;
+    max-width: 500px;
+    margin-left: 2em;
+    font-size: 1.2rem;
+
+    p {
+      line-height: 1.8;
+    }
+  }
+}
+
+@include phone() {
+  .phone {
+    margin: 10em auto 3em;
+  }
+}
