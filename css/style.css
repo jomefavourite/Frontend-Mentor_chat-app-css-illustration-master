@@ -62,7 +62,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 4em auto 3em;
+  margin: 30vh auto 3em;
   -webkit-clip-path: circle(140% at 0 4%);
           clip-path: circle(140% at 0 4%);
   -webkit-animation: appear .7s ease-in-out;
