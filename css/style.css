@@ -52,6 +52,7 @@ body {
   height: 35em;
   border-radius: 0 0 50% 50%/0 0 50% 50%;
   background: linear-gradient(30deg, #8838ff, #e942ff);
+  z-index: -1000;
 }
 
 .phone {
@@ -96,8 +97,10 @@ body {
   height: 630px;
   background: white;
   border-radius: 40px;
-  -webkit-box-shadow: 0 0 10px -1px #80808085, 0 10px 20px 4px #80808044;
-          box-shadow: 0 0 10px -1px #80808085, 0 10px 20px 4px #80808044;
+  -webkit-box-shadow: 0 0 10px -1px #80808085,
+ 0 10px 20px 4px #80808044;
+          box-shadow: 0 0 10px -1px #80808085,
+ 0 10px 20px 4px #80808044;
 }
 
 .phonecase__inner {
@@ -194,7 +197,7 @@ body {
 
 @media (max-width: 400px) {
   .phone {
-    margin: 10em auto 3em;
+    margin: 30vh auto 3em;
   }
 }
 /*# sourceMappingURL=style.css.map */
